@@ -1,19 +1,19 @@
 <h2>Edit Mahasiswa</h2>
 
-<form action="<?php echo URL; ?>/mahasiswa/update" method="post">
+<form action="<?php echo URL; ?>/mobilelegend/update" method="post">
     <input type="hidden" name="id" value="<?php echo $data['row']['id']; ?>">
     <table>
         <tr>
-            <td>NIM</td>
-            <td><input type="number" name="nim" value="<?php echo $data['row']['nim']?>" required></td>
-        </tr>
-        <tr>
             <td>NAMA</td>
-            <td><input type="text" name="nama" value="<?php echo $data['row']['nama']; ?>" required></td>
+            <td><input type="text" name="nama" value="<?php echo $data['row']['nama']?>" required></td>
         </tr>
         <tr>
-            <td>PRODI</td>
-            <td><input type="text" name="prodi" value="<?php echo $data['row']['prodi']?>" required></td>
+            <td>PERAN</td>
+            <td><input type="text" name="peran" value="<?php echo $data['row']['peran']; ?>" required></td>
+        </tr>
+        <tr>
+            <td>HARGA</td>
+            <td><input type="number" name="harga" value="<?php echo $data['row']['harga']?>" required></td>
         </tr>
         <tr>
             <td>JENIS KELAMIN</td>

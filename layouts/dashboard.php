@@ -48,8 +48,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo URL; ?>/mahasiswa">
-						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Mahasiswa
+					<a href="<?php echo URL; ?>/mobilelegend">
+						<img class="icon" src="<?php echo AST; ?>/img/menu.png" alt=""> Hero Mobile Legend 
 					</a>
 				</li>
 				<li>

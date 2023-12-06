@@ -1,18 +1,18 @@
 <h2>Input Mahasiswa</h2>
 
-<form action="<?php echo URL; ?>/mahasiswa/save" method="post">
+<form action="<?php echo URL; ?>/mobilelegend/save" method="post">
     <table>
-        <tr>
-            <td>NIM</td>
-            <td><input type="number" name="nim" required></td>
-        </tr>
         <tr>
             <td>NAMA</td>
             <td><input type="text" name="nama" required></td>
         </tr>
         <tr>
-            <td>PRODI</td>
-            <td><input type="text" name="prodi" required></td>
+            <td>PERAN</td>
+            <td><input type="text" name="peran" required></td>
+        </tr>
+        <tr>
+            <td>HARGA</td>
+            <td><input type="number" name="harga" required></td>
         </tr>
         <tr>
             <td>JENIS KELAMIN</td>

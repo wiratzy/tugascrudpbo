@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Core\Controller;
 
-class Mahasiswa extends Controller
+class MobileLegend extends Controller
 {
      public object $model;
 
@@ -12,41 +12,41 @@ class Mahasiswa extends Controller
      {
           parent::cekLogin();
 
-          $this->model = new \App\Models\Mahasiswa();
+          $this->model = new \App\Models\MobileLegend();
      }
 
      public function index()
      {
           $data['rows'] = $this->model->show();
-          $this->dashboard('Mahasiswa/index', $data);
+          $this->dashboard('Mobilelegend/index', $data);
      }
 
      public function input()
      {
-          $this->dashboard('mahasiswa/input');
+          $this->dashboard('mobilelegend/input');
      }
 
      public function save()
      {
           $this->model->save();
-          header('location:' . URL . '/mahasiswa');
+          header('location:' . URL . '/mobilelegend');
      }
 
      public function edit($id)
      {
           $data['row'] = $this->model->edit($id);
-          $this->dashboard('mahasiswa/edit', $data);
+          $this->dashboard('mobilelegend/edit', $data);
      }
 
      public function update()
      {
           $this->model->update();
-          header('location:' . URL . '/mahasiswa');
+          header('location:' . URL . '/mobilelegend');
      }
 
      public function delete($id)
 	{
 		$this->model->delete($id);
-		header('location:' . URL . '/mahasiswa');
+		header('location:' . URL . '/mobilelegend');
 	}
 }
